@@ -3,8 +3,8 @@ const fs = require("fs");
 
 const server = http.createServer((req, res) =>{
   const pathName = req.url;
-    if(pathName === "/venkat"){
-        res.end("I'm Venkat and the owner of the server");
+    if(pathName === "/sashank"){
+        res.end("I'm sashank and the owner of the server");
     }else if (pathName === "/home") {
       fs.readFile("home.html","utf-8",(err, data)=>{
           res.end(data);
